@@ -1,0 +1,110 @@
+/* styles.css */
+@font-face {
+    font-family: 'iransans';
+    src: url('path/to/iransans.woff2') format('woff2'),
+        url('path/to/iransans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    text-align: center;
+    direction: rtl;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'iransans', Arial, sans-serif;
+    background-color: #d3d3d33b;
+}
+
+#product-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.product-item .product-name {
+    text-decoration: none;
+    color: #0073aa;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.product-item .product-name:hover {
+    text-decoration: underline;
+}
+
+.product-item .product-price {
+    font-weight: bold;
+}
+
+.product-item .product-sale-price {
+    color: red;
+}
+
+.product-item a.edit-link {
+    text-decoration: none;
+    color: #0073aa;
+    margin-top: 10px;
+    background-color: #3e5997;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.product-item a.edit-link:hover {
+    background-color: #ff7f7f;
+}
+
+.edit-form {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.edit-form input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.edit-form button {
+    padding: 10px 20px;
+    background-color: #ffadad;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-form button:hover {
+    background-color: #ff7f7f;
+}
